@@ -39,3 +39,9 @@ tzdata==2026.6
 url-normalize==3.1.0
 urllib3==2.8.0
 websockets==17.4
+streamlit
+plotly
+pandas
+numpy
+matplotlib
+fastf1
