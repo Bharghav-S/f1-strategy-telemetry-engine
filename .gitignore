@@ -1,0 +1,24 @@
+
+# Python virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# FastF1 cache and credentials
+data/cache/
+.env
+.env.*
+
+# Local database
+data/database/
+
+# OS and editor files
+.DS_Store
+.vscode/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
