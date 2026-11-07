@@ -294,3 +294,54 @@ st.download_button(
 
 st.divider()
 st.caption("Built with Python, FastF1, Pandas, SQLite, Plotly and Streamlit.")
+
+
+# --------------------------------------------------
+# ADDITIONAL RACE ANALYSIS GALLERY
+# --------------------------------------------------
+
+st.divider()
+
+st.header("6. Additional Race Analysis")
+st.write(
+    "Explore the additional visualisations generated "
+    "during the analysis of the 2024 British Grand Prix."
+)
+
+gallery = [
+    {
+        "title": "Driver Lap Progression",
+        "file": "driver_lap_progression.png",
+        "description": "Lap-time progression across the race."
+    },
+    {
+        "title": "Tyre Degradation",
+        "file": "tyre_degradation.png",
+        "description": "Lap times against tyre age."
+    },
+    {
+        "title": "Compound Comparison",
+        "file": "compound_comparison.png",
+        "description": "Lap-time distributions by tyre compound."
+    },
+    {
+        "title": "Stint Comparison",
+        "file": "stint_comparison.png",
+        "description": "Performance comparison across race stints."
+    },
+    {
+        "title": "Tyre Degradation Regression Model",
+        "file": "tyre_degradation_model.png",
+        "description": "Estimated lap-time degradation slopes."
+    }
+]
+
+for item in gallery:
+    image_path = ROOT / "outputs" / item["file"]
+
+    if image_path.exists():
+        st.subheader(item["title"])
+        st.caption(item["description"])
+        st.image(str(image_path), width="stretch")
+    else:
+        st.warning(f"Missing visualisation: {item['file']}")
