@@ -2,6 +2,9 @@
 
 An end-to-end Formula 1 data analytics project analysing the **2024 British Grand Prix at Silverstone** using Python, FastF1, Pandas, SQLite, Plotly and Streamlit.
 
+[🚀 Launch Live Dashboard](https://f1-strategy-telemetry-engine-sxulgp5wil4ahamst3ggyb.streamlit.app/)
+
+An end-to-end Formula 1 analytics project analysing the 2024 British Grand Prix at Silverstone.
 ## Project Overview
 
 This project transforms Formula 1 race telemetry into driver performance analysis, tyre degradation estimates and illustrative race strategy comparisons.
